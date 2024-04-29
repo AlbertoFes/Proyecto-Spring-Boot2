@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Libros</title>
+</head>
+<body>
+
+<h1> Editar tu libro </h1>
+<form th:action="@{/actualizarLibro}" method="post">
+    <input type="hidden" name="idLibro" th:value="${libro.idLibro}">
+    <input type="text" name="titulo" placeholder="Titulo" th:value="${libro.titulo}" required>
+    <input type="text" name="autor" placeholder="Auto"  th:value="${libro.autor}" required>
+    <input type="text" name="genero" placeholder="Genero"  th:value="${libro.genero}" required>
+    <input type="text" name="año" placeholder="Año"  th:value="${libro.año}" required>
+    <button type="submit">Actualizar</button>
+</form>
+
+</body>
+</html>
