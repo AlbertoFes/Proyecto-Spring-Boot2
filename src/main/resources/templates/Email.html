@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Email</title>
+</head>
+<body>
+<h1>Enviar Email</h1>
+<form action="/api/books/Email" method="post">
+    <label for="to">Para:</label>
+    <input type="email" id="to" name="to" required>
+    <br><br>
+    <label for="subject">Asunto:</label>
+    <input type="text" id="subject" name="subject" required>
+    <br><br>
+    <label for="text">Mensaje:</label>
+    <textarea id="text" name="text" rows="4" cols="50" required></textarea>
+    <br><br>
+    <button type="submit">Enviar</button>
+</form>
+</body>
+</html>
